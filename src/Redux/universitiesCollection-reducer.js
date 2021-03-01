@@ -24,6 +24,7 @@ const setUniversities = (list) =>({type:SET_UNIVERSITIES, list})
 
 export const getList = (county) => (dispatch) =>{
     getUniversities(county).then(response => {
+        debugger
         dispatch(setUniversities(response))
     })
 }

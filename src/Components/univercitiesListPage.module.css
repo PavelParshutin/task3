@@ -1,0 +1,10 @@
+.table{
+    border: 2px solid black;
+}
+.table_cell{
+    border: 2px solid black;
+    padding: 3px;
+}
+th.table_cell{
+    text-transform: uppercase;
+}
