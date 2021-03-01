@@ -1,14 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { UniversitiesList } from '../Components/UniversitiesListPage'
-import { getList } from '../Redux/universitiesCollection-reducer'
+import { getList, setSavedCheckboxList } from '../Redux/universitiesCollection-reducer'
 
 
 const UniversitiesListPageContainer = (props) =>{
     return(
         <UniversitiesList
         universities={props.universities}
-        getList={props.getList}/>
+        getList={props.getList}
+        setSavedCheckboxList={setSavedCheckboxList}/>
     )
 }
 
@@ -19,4 +20,4 @@ let mapStateToProps = (state) =>{
 }
 
 
-export default connect(mapStateToProps,{getList})(UniversitiesListPageContainer)
+export default connect(mapStateToProps,{getList, setSavedCheckboxList})(UniversitiesListPageContainer)
