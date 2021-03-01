@@ -22,9 +22,9 @@ export const UniversitiesCollectionReducer = (state=initialState, action) =>{
 
 const setUniversities = (list) =>({type:SET_UNIVERSITIES, list})
 
-const getList = (county) => (dispatch) =>{
+export const getList = (county) => (dispatch) =>{
     getUniversities(county).then(response => {
-        dispatch(setUniversities(response.data))
+        dispatch(setUniversities(response))
     })
 }
 

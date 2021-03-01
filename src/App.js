@@ -1,9 +1,9 @@
-import { UniversitiesList } from '../src/Components/UniversitiesListPage';
+import UniversitiesListPageContainer from '../src/Components/UniversitiesListPageContainer';
 import './App.css';
 
 function App() {
   return (
-    <UniversitiesList />
+    <UniversitiesListPageContainer />
   );
 }
 
